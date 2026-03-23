@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pocket Concierge — Amon T</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header class="site-header">
+  <div class="container container--wide">
+    <div class="site-header__logo"><a href="../index.html"><img src="../img/logo-amonrada.svg" alt="Amon T"></a></div>
+    <nav class="site-header__nav" aria-label="Main navigation">
+      <a href="../index.html#projects">Projects</a>
+      <a href="../index.html#prologue">Prologue</a>
+      <a href="../CV-AmonradaTardthong.pdf" download class="nav-pdf">PDF <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg></a>
+      <a href="#contact" class="nav-contact">Contact</a>
+      <button class="theme-toggle" aria-label="Toggle light and dark mode" onclick="toggleTheme()">
+        <svg class="theme-toggle__moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z"/></svg>
+        <svg class="theme-toggle__sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      </button>
+    </nav>
+  </div>
+</header>
+<main id="main">
+  <article>
+    <section class="project-hero">
+      <div class="container">
+        <h1 class="project-hero__title">Pocket Concierge</h1>
+        <p class="project-hero__subtitle">Exclusive Dining, Redesigned from the Inside Out</p>
+      </div>
+    </section>
+
+    <section class="container">
+      <dl class="project-meta">
+        <div><dt>Role</dt><dd>Solo Product Designer</dd></div>
+        <div><dt>Duration</dt><dd>2 years (2024–present)</dd></div>
+        <div><dt>Company</dt><dd>American Express</dd></div>
+        <div><dt>Platform</dt><dd>Web (guest, admin, venue)</dd></div>
+        <div><dt>Team</dt><dd>1 PO, 1 Data Analyst, 5 Engineers</dd></div>
+      </dl>
+    </section>
+
+    <!-- Hero image -->
+    <div class="container">
+</div>
+
+    <!-- The situation -->
+    <section class="content-section container">
+      <h2 class="content-section__label">The situation</h2>
+      <div class="content-section__body">
+        <p>Pocket Concierge is American Express's exclusive dining reservation platform in Japan — approximately 800 curated restaurants, 2.5 million users annually, with an average booking value of ¥24,500.</p>
+        <p>When I joined, there was no designer in Japan. The product was being directed from the US and UK — no local research, no design system, no connected experience across stakeholders. The UI wasn't even properly branded.</p>
+        <p>The numbers told the story: only 2.8% of users who began a reservation actually completed one. 87% dropped off at the login wall alone.</p>
+      </div>
+    </section>
+
+    <!-- The insight -->
+    <section class="content-section container">
+      <h2 class="content-section__label">The insight</h2>
+      <div class="content-section__body">
+        <h3>A login wall that killed intent</h3>
+        <p>Users had to create an account before they could even begin booking. The funnel collapsed from 100% to 12% at the login step — an 88% drop before anyone saw a restaurant's availability.</p>
+
+        <h3>Three reservation types that no one understood</h3>
+        <p>Pocket Concierge has an unusual model: Instant booking, Request-based booking (where a concierge confirms with the restaurant), and Waitlist. The "Request" type was the most confusing — and the most painful.</p>
+        <p>It featured a "deadline" field: when is the last day you'd like to know if you got a seat? But the booking date defaulted to "tomorrow," so guests read "deadline" as their actual reservation date. They'd book for a special occasion months away and receive a cold rejection days before — because the system had been working on the wrong timeline entirely.</p>
+        <p>I experienced this myself. Before joining the team, as an Amex Platinum cardholder, I tried to book a restaurant for a special occasion three months in advance. Three days before the date, I received a generic message: no seat available. No alternative. No apology. The platform I was about to redesign had already failed me personally.</p>
+
+        <h3>Guests who weren't foodies</h3>
+        <p>The platform communicated exclusivity through chef names, awards, and restaurant reputations. But Amex cardholders aren't necessarily food enthusiasts — they're busy professionals craving a memorable experience. They don't know the chef. They want to know: Will this impress the person I'm with? Will this evening be worth remembering?</p>
+      </div>
+    </section>
+
+    <!-- The work -->
+    <section class="content-section container">
+      <h2 class="content-section__label">The work</h2>
+      <div class="content-section__body">
+        <h3>Removed the login wall</h3>
+        <p>I merged account creation into the reservation flow itself — you begin booking, and sign-up happens as part of the process, not before it. One friction point removed; intent preserved.</p>
+
+        <h3>Redesigned the reservation type system</h3>
+        <p>I surfaced reservation types at the top of the restaurant page, inside the booking panel — not buried at the end of the flow. For Request bookings, I placed the booking date and deadline side by side, making the two-date requirement immediately visible. Removed the "tomorrow" default entirely. Guests now choose their own dates and understand the distinction before committing.</p>
+      </div>
+    </section>
+
+    <!-- UI screenshot: reservation flow -->
+    <div class="container">
+</div>
+
+    <section class="content-section container">
+      <div class="content-section__body">
+        <h3>Reframed the brand around the scene, not the chef</h3>
+        <p>I shifted the design language from restaurant credentials to the experience itself. What's the occasion? Who are you with? How do you want to feel? The platform stopped saying "this chef has two Michelin stars" and started saying "a night you'll talk about for years."</p>
+
+        <h3>Added compounding small features</h3>
+        <p>In an enterprise environment where large redesigns move slowly, I shipped a series of precise, small interventions:</p>
+        <ul>
+          <li><strong>Cuisine recommendation banners</strong> — when a restaurant is unavailable, suggest alternatives rather than a dead end</li>
+          <li><strong>Add to calendar</strong> — reduce no-shows by putting the reservation into the guest's life</li>
+          <li><strong>Share reservation with friends</strong> — turn a booking into a social moment</li>
+          <li><strong>Marketing article template system</strong> — replaced outsourced, expensive, low-quality landing pages with an in-house HTML template the marketing team could reuse independently</li>
+        </ul>
+
+        <h3>Built the design system from zero</h3>
+        <p>No components existed. No tokens. No shared language between guest, venue, and admin interfaces. I rebuilt every component and established foundational design tokens — an ongoing effort, built alongside shipping product work.</p>
+      </div>
+    </section>
+
+    <!-- UI screenshot: design system and features -->
+    <div class="container">
+</div>
+
+    <!-- What I expanded -->
+    <section class="content-section container">
+      <h2 class="content-section__label">What I expanded</h2>
+      <div class="content-section__body">
+        <h3>Amex Foodie Club</h3>
+        <p>I led the collaboration between Pocket Concierge and American Express to create an exclusive community: Amex Foodie Club. Private chef dinners. Wine tastings. Adventures with chefs to source ingredients and cook from them. Quarterly events attracting approximately 1,000 members including high-net-worth cardholders.</p>
+        <p>I also conceived "Beyond the Benefits — What's Our Amex Story?" — an event inviting cardholders across all tiers to share their personal stories, experiences, and reasons for choosing Amex. Not a promotional exercise. A community-building moment.</p>
+
+        <h3>Square x Pocket Concierge Restaurant Collection</h3>
+        <p>A collaboration with Square where guests shared memorable stories about their favorite restaurants — not scores or points, but pure experience and impression. I designed the event concept, the experience flow, and the landing page.</p>
+        <p>500+ attendees. 380+ restaurants voted on. Top 10 awarded. Square is returning for a second year.</p>
+      </div>
+    </section>
+
+    <!-- The impact -->
+    <section class="content-section container">
+      <h2 class="content-section__label">The impact</h2>
+      <div class="content-section__body">
+        <h3>Conversion</h3>
+        <table class="metrics-table">
+          <thead>
+            <tr><th>Metric</th><th>Before</th><th>After</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Login wall pass-through</td><td>12%</td><td>Removed (merged into flow)</td></tr>
+            <tr><td>Reservation detail page conversion</td><td>4.6%</td><td>7.8%</td></tr>
+            <tr><td>End-to-end reservation completion</td><td>2.8%</td><td>5.1%</td></tr>
+          </tbody>
+        </table>
+        <p>At 2.5M annual users and ¥24,500 average booking value: approximately ¥1.4B potential annual GTV impact.</p>
+
+        <h3>Feature adoption</h3>
+        <table class="metrics-table">
+          <thead>
+            <tr><th>Feature</th><th>Adoption rate</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Cuisine recommendation banners</td><td>~200 reservations/month (new)</td></tr>
+            <tr><td>Add to calendar</td><td>71% of completed bookings</td></tr>
+            <tr><td>Share with friends</td><td>48% of completed bookings</td></tr>
+          </tbody>
+        </table>
+
+        <h3>Operational efficiency</h3>
+        <table class="metrics-table">
+          <thead>
+            <tr><th>Metric</th><th>Before</th><th>After</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Marketing article publishing</td><td>1 per quarter</td><td>1–2 per month (up to 8x)</td></tr>
+            <tr><td>Article production</td><td>Outsourced, expensive, slow</td><td>In-house, templated, fast</td></tr>
+            <tr><td>Design system</td><td>Non-existent</td><td>Built from zero, ongoing</td></tr>
+          </tbody>
+        </table>
+
+        <h3>Community and partnerships</h3>
+        <ul>
+          <li><strong>Amex Foodie Club:</strong> ~1,000 members, quarterly events, expanding to smaller monthly events in 2025</li>
+          <li><strong>Square Restaurant Collection:</strong> 500+ event attendees, 380+ restaurants voted, returning for year two</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- The lesson -->
+    <section class="content-section container">
+      <h2 class="content-section__label">The lesson</h2>
+      <div class="content-section__body">
+        <p>A solo designer — embedded in the market, using the product themselves, armed with research and small precise bets — can move a ¥1.7B platform to ¥3.1B in potential value. Not through a grand redesign, but through dozens of corrections that compound. Fix the wall. Clarify the words. Reframe the story. Add the right touchpoint at the right moment. Then expand beyond the product into community and culture.</p>
+      </div>
+    </section>
+
+    <!-- Pull quote -->
+    <div class="container">
+      <blockquote class="pull-quote">"The best design advantage wasn't a framework or a methodology. It was that I was already the user who had been failed by the product."</blockquote>
+    </div>
+
+    <!-- Project navigation -->
+  
+  </article>
+    <section class="content-section"><div class="container"><a href="../index.html" class="back-link">&#8592; Back to Portfolio</a></div></section>
+</main>
+<script>
+function toggleTheme() {
+  var root = document.documentElement;
+  var current = root.getAttribute("data-theme");
+  var isDark = current === "dark" || (!current && window.matchMedia("(prefers-color-scheme: dark)").matches);
+  var next = isDark ? "light" : "dark";
+  root.setAttribute("data-theme", next);
+  localStorage.setItem("theme", next);
+}
+(function() {
+  var saved = localStorage.getItem("theme");
+  if (saved) document.documentElement.setAttribute("data-theme", saved);
+})();
+
+// Show/hide header on scroll
+(function() {
+  var header = document.querySelector('.site-header');
+  if (!header) return;
+  var lastY = 0;
+  window.addEventListener('scroll', function() {
+    var y = window.scrollY;
+    if (y < 64) {
+      header.classList.remove('site-header--hidden');
+    } else if (y > lastY) {
+      header.classList.add('site-header--hidden');
+    } else {
+      header.classList.remove('site-header--hidden');
+    }
+    lastY = y;
+  }, { passive: true });
+})();
+
+// Page transition for back link
+(function() {
+  document.querySelectorAll('a.back-link, a[href^="../index.html"]').forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      var url = link.getAttribute('href');
+      document.body.classList.add('page-exit');
+      setTimeout(function() { window.location.href = url; }, 400);
+    });
+  });
+})();
+</script>
+</body>
+</html>

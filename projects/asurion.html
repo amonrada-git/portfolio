@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asurion Japan — Amon T</title>
+  <meta name="description" content="Device insurance platform redesign. Hid a save button, reduced backend traffic by 90%. Solo UX Designer at Asurion Japan.">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header class="site-header">
+  <div class="container container--wide">
+    <div class="site-header__logo"><a href="../index.html"><img src="../img/logo-amonrada.svg" alt="Amon T"></a></div>
+    <nav class="site-header__nav" aria-label="Main navigation">
+      <a href="../index.html#projects">Projects</a>
+      <a href="../index.html#prologue">Prologue</a>
+      <a href="../CV-AmonradaTardthong.pdf" download class="nav-pdf">PDF <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg></a>
+      <a href="#contact" class="nav-contact">Contact</a>
+      <button class="theme-toggle" aria-label="Toggle light and dark mode" onclick="toggleTheme()">
+        <svg class="theme-toggle__moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z"/></svg>
+        <svg class="theme-toggle__sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      </button>
+    </nav>
+  </div>
+</header>
+<main id="main">
+  <section class="project-hero">
+    <div class="container">
+      <h1 class="project-hero__title">Asurion Japan</h1>
+      <p class="project-hero__subtitle">Hide the button. Save the system.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <dl class="project-meta">
+        <div>
+          <dt>Role</dt>
+          <dd>Solo UX Designer</dd>
+        </div>
+        <div>
+          <dt>Duration</dt>
+          <dd>1 year (2019–2020)</dd>
+        </div>
+        <div>
+          <dt>Company</dt>
+          <dd>Asurion Japan</dd>
+        </div>
+        <div>
+          <dt>Platform</dt>
+          <dd>Web (internal and external)</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <div class="container">
+</div>
+
+  <section class="content-section">
+    <div class="container">
+      <h2 class="content-section__label">The Situation</h2>
+      <div class="content-section__body">
+        <p>Asurion provides device insurance and support — when your phone breaks, they're the company behind the claim process. The platform I inherited was functional but visually stuck in the 90s. Text everywhere, same font size, no hierarchy, no visual system. Information-dense pages that were nearly impossible to scan. For a product that handles insurance claims — where clarity directly affects customer outcomes — this was a real problem.</p>
+        <p>I was the only designer on this product. Another designer handled other products in the company. My job: clean up the information architecture, modernize the UI, and improve the experience for both customers and internal call center agents.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="container">
+      <h2 class="content-section__label">The Work</h2>
+      <div class="content-section__body">
+        <h3>Cleaned Up the Device Insurance Platform</h3>
+        <p>The core of my work — redesigning layouts, interactions, and transitions across the insurance platform. Established visual hierarchy where there was none. Built wireframes, a design system, and mockups to communicate user flows clearly to engineers and business stakeholders.</p>
+        <p>The goal wasn't a flashy redesign. It was making dense insurance information scannable, understandable, and trustworthy. When someone's phone is broken and they're filing a claim, the last thing they need is an interface that makes them work harder.</p>
+
+        <h3>Designed the Agent-to-Agent Chat Tool</h3>
+        <p>Led all UI and UX decisions for an internal and external chat system used by call center teams across locations. The tool supported team communication between agents — messaging, editing and deleting messages, and sharing images within conversations. Clean, functional, built for speed in a high-volume environment.</p>
+
+        <h3>The Save Button — My Proudest Small Design Decision</h3>
+        <p>I visited the call center to watch agents work. What I saw was brutal: agents simultaneously talking to customers on the phone, reading on-screen prompts, and selecting answers in a real-time note-taking tool. It's one of the hardest multitasking jobs I've observed.</p>
+        <p>But the real problem was fear. Agents were terrified their data would disappear. So they clicked "Save" constantly — after every single selection, sometimes multiple times in a row, even when nothing had changed. This behavior likely started after a past system crash, and it never stopped.</p>
+        <p>The result: massive unnecessary backend traffic. The system would occasionally buckle under the load, which only reinforced the agents' fear, which made them click Save even more. A vicious cycle.</p>
+        <p>My solution was counterintuitive: <strong>I hid the Save button entirely.</strong></p>
+        <p>I replaced it with auto-save on every selection, paired with a visible confirmation message — a quiet reassurance that their answer was successfully saved. No button to hunt for. No anxiety about whether it worked. The system just handled it.</p>
+        <p><strong>Backend traffic from the note-taking platform dropped by ~90%.</strong></p>
+        <p>Agents could focus on the conversation instead of babysitting a button. The system stopped straining. And the fear that had driven the behavior in the first place quietly dissolved — not because I told agents to stop clicking, but because I removed the need to click at all.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+</div>
+
+  <div class="container">
+    <blockquote class="pull-quote">"A 90% traffic reduction. Not from a backend optimization. From hiding a button and showing a message."</blockquote>
+  </div>
+
+  <div class="container">
+</div>
+
+  <section class="content-section">
+    <div class="container">
+      <h2 class="content-section__label">The Lesson</h2>
+      <div class="content-section__body">
+        <h3>What This Project Proved</h3>
+        <p><strong>Watch users work before you design.</strong> I would never have found the Save button problem from a requirements doc or a stakeholder interview. I found it by sitting in a call center, watching agents' hands, and noticing a pattern of anxiety expressed through repetitive clicks.</p>
+        <p><strong>The best solutions sometimes remove UI, not add it.</strong> A visible Save button felt like a safety net. It was actually the source of the problem. Hiding it and replacing it with automated feedback solved a technical crisis through a design decision.</p>
+        <p><strong>Clarity is the product in insurance.</strong> When information is dense and stakes are real, the designer's job isn't to make things beautiful — it's to make things scannable, trustworthy, and calm.</p>
+      </div>
+    </div>
+  </section>
+
+  <nav class="container">
+    </div>
+</footer>
+    <section class="content-section"><div class="container"><a href="../index.html" class="back-link">&#8592; Back to Portfolio</a></div></section>
+</main>
+<script>
+function toggleTheme() {
+  var root = document.documentElement;
+  var current = root.getAttribute("data-theme");
+  var isDark = current === "dark" || (!current && window.matchMedia("(prefers-color-scheme: dark)").matches);
+  var next = isDark ? "light" : "dark";
+  root.setAttribute("data-theme", next);
+  localStorage.setItem("theme", next);
+}
+(function() {
+  var saved = localStorage.getItem("theme");
+  if (saved) document.documentElement.setAttribute("data-theme", saved);
+})();
+
+// Show/hide header on scroll
+(function() {
+  var header = document.querySelector('.site-header');
+  if (!header) return;
+  var lastY = 0;
+  window.addEventListener('scroll', function() {
+    var y = window.scrollY;
+    if (y < 64) {
+      header.classList.remove('site-header--hidden');
+    } else if (y > lastY) {
+      header.classList.add('site-header--hidden');
+    } else {
+      header.classList.remove('site-header--hidden');
+    }
+    lastY = y;
+  }, { passive: true });
+})();
+
+// Page transition for back link
+(function() {
+  document.querySelectorAll('a.back-link, a[href^="../index.html"]').forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      var url = link.getAttribute('href');
+      document.body.classList.add('page-exit');
+      setTimeout(function() { window.location.href = url; }, 400);
+    });
+  });
+})();
+</script>
+</body>
+</html>

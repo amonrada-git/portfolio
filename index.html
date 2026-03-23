@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amon T — Product Designer</title>
+  <meta name="description" content="Senior product designer in Tokyo. 8 years in fintech, platforms, and systems. Available for contract work.">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=DM+Sans:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="home">
+
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header class="site-header">
+  <div class="container container--wide">
+    <div class="site-header__logo"><a href="index.html"><img src="img/logo-amonrada.svg" alt="Amon T"></a></div>
+    <nav class="site-header__nav" aria-label="Main navigation">
+      <a href="#projects">Projects</a>
+      <a href="#prologue">Prologue</a>
+      <a href="CV-AmonradaTardthong.pdf" download class="nav-pdf">PDF <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg></a>
+      <a href="#contact" class="nav-contact">Contact</a>
+      <button class="theme-toggle" aria-label="Toggle light and dark mode" onclick="toggleTheme()">
+        <svg class="theme-toggle__moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z"/></svg>
+        <svg class="theme-toggle__sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- Hero — split layout -->
+  <section class="hero">
+    <div class="hero__content">
+      <div class="hero__name-block">
+        <h1 class="hero__title">Portfolio</h1>
+        <p class="hero__tagline">A product designer blending storytelling and experience through beautiful, intuitive design</p>
+        <p class="hero__location-value">Based in Tokyo, Japan</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Point of View -->
+  <section class="pov fade-in">
+    <div class="container container--wide">
+      <p class="pov__label">Point of View</p>
+      <p class="pov__text">Industrial design-trained, turned product designer. A decade of shaping products from startups to global enterprise.</p>
+      <p class="pov__text pov__text--second">I believe great design must be both intuitive and beautiful — solution without craft is only half the work.</p>
+    </div>
+  </section>
+
+  <!-- Profile -->
+  <section class="profile fade-in" id="profile">
+    <div class="container container--wide">
+      <!-- Timeline -->
+      <div class="timeline">
+        <div class="timeline__track">
+          <div class="timeline__item">
+            <span class="timeline__dot"></span>
+            <p class="timeline__year">2012</p>
+            <p class="timeline__role">Freelancer</p>
+            <p class="timeline__company">Graphic Designer</p>
+          </div>
+          <div class="timeline__item">
+            <span class="timeline__dot"></span>
+            <p class="timeline__year">2017</p>
+            <p class="timeline__role">Start Up</p>
+            <p class="timeline__company">Designer</p>
+          </div>
+          <div class="timeline__item">
+            <span class="timeline__dot"></span>
+            <p class="timeline__year">2018</p>
+            <p class="timeline__role">Advertising Agency</p>
+            <p class="timeline__company">Digital Designer</p>
+          </div>
+          <div class="timeline__item">
+            <span class="timeline__dot"></span>
+            <p class="timeline__year">2019</p>
+            <p class="timeline__role">Insurance Industry</p>
+            <p class="timeline__company">UX Designer</p>
+          </div>
+          <div class="timeline__item">
+            <span class="timeline__dot"></span>
+            <p class="timeline__year">2020</p>
+            <p class="timeline__role">Financial Industry</p>
+            <p class="timeline__company">Senior UX Designer</p>
+          </div>
+          <div class="timeline__item">
+            <span class="timeline__dot"></span>
+            <p class="timeline__year">current</p>
+            <p class="timeline__role"></p>
+            <p class="timeline__company"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section fade-in" id="projects">
+    <div class="container container--wide">
+      <h2 class="projects__title">Projects</h2>
+
+      <!-- Featured — minimal border cards -->
+      <a href="projects/toranoko.html" class="project-feature">
+        <div class="project-feature__image" role="img" aria-label="Toranoko project"><img src="img/main-toranoko.webp" alt="Toranoko app interface" loading="lazy"></div>
+        <div class="project-feature__content">
+          <p class="project-feature__year">2021 – 2024</p>
+          <h3 class="project-feature__name">Toranoko</h3>
+          <p class="project-feature__quote">Don't remove — relocate.</p>
+          <p class="project-feature__desc">Japan's micro-investing app helping beginners build wealth through spare-change rounding, point investments, and monthly contributions.</p>
+          <p class="project-feature__results-label">Key results</p>
+          <ul class="project-feature__results">
+            <li>Onboarding completion +34%</li>
+            <li>KYC streamlined from 8 to 5 steps</li>
+            <li>Monthly investment feature — 28% opt-in, +17% retention</li>
+          </ul>
+        </div>
+      </a>
+
+      <a href="projects/aruitoku.html" class="project-feature">
+        <div class="project-feature__image" role="img" aria-label="Aruitoku project"><img src="img/main-aruitoku.webp" alt="Aruitoku app interface" loading="lazy"></div>
+        <div class="project-feature__content">
+          <p class="project-feature__year">2023 · JFIA Award Winner</p>
+          <h3 class="project-feature__name">Aruitoku</h3>
+          <p class="project-feature__quote">Make fitness fun while helping users improve financial well-being.</p>
+          <p class="project-feature__desc">A walking app partnered with MUFG Bank that converts steps into investment points through Toranoko. Health meets finance in one seamless experience.</p>
+          <p class="project-feature__results-label">Key results</p>
+          <ul class="project-feature__results">
+            <li>30.1% retention rate by day 30 (industry avg: 2.1%)</li>
+            <li>5.17% conversion to investment (industry avg: 1–2%)</li>
+            <li>JFIA Collaboration Award 2024</li>
+          </ul>
+        </div>
+      </a>
+
+      <a href="projects/umitron.html" class="project-feature">
+        <div class="project-feature__image" role="img" aria-label="UMITRON project"><img src="img/main-umitron.webp" alt="UMITRON app interface" loading="lazy"></div>
+        <div class="project-feature__content">
+          <p class="project-feature__year">2021</p>
+          <h3 class="project-feature__name">UMITRON</h3>
+          <p class="project-feature__quote">Seven products. One designer. One ocean.</p>
+          <p class="project-feature__desc">Sustainable aquaculture platform — IoT feeders, satellite monitoring, AI analytics, e-commerce. Designed for farmers on boats in bright sunlight.</p>
+          <p class="project-feature__results-label">Key results</p>
+          <ul class="project-feature__results">
+            <li>Feed waste reduced by 22%</li>
+            <li>Usability across key tasks +42.8%</li>
+            <li>Report compilation time −58%</li>
+          </ul>
+        </div>
+      </a>
+
+      <a href="projects/glo-ogilvy.html" class="project-feature">
+        <div class="project-feature__image" role="img" aria-label="glo project"><img src="img/main-glo.webp" alt="glo platform" loading="lazy"></div>
+        <div class="project-feature__content">
+          <p class="project-feature__year">2018 – 2019</p>
+          <h3 class="project-feature__name">glo — British American Tobacco</h3>
+          <p class="project-feature__quote">The trajectory wasn't planned. It was earned.</p>
+          <p class="project-feature__desc">Product page to platform redesign to launch event at Geometry Ogilvy Japan. From campaign banners to owning the full experience.</p>
+          <p class="project-feature__results-label">Key results</p>
+          <ul class="project-feature__results">
+            <li>1.2M monthly visitors on discoverglo.jp</li>
+            <li>Full platform redesign ownership</li>
+            <li>Digital designer → UX designer in 11 months</li>
+          </ul>
+        </div>
+      </a>
+
+      <!-- Other projects — 4-column grid -->
+      <div class="projects-grid-sm">
+        <a href="projects/fidelity.html" class="project-card-sm">
+          <div class="project-card-sm__image" role="img" aria-label="Fidelity project"><img src="img/work-fidelity.webp" alt="Fidelity Investments" loading="lazy"></div>
+          <p class="project-card-sm__year">2020 – 2021</p>
+          <h4 class="project-card-sm__name">Fidelity Investments</h4>
+          <p class="project-card-sm__desc">Localized an AI fund management platform for Japanese investors.</p>
+          <p class="project-card-sm__impact">Global team invited me to join full-time</p>
+        </a>
+        <a href="projects/asurion.html" class="project-card-sm">
+          <div class="project-card-sm__image" role="img" aria-label="Asurion project"><img src="img/work-asurion.webp" alt="Asurion Japan" loading="lazy"></div>
+          <p class="project-card-sm__year">2019 – 2020</p>
+          <h4 class="project-card-sm__name">Asurion Japan</h4>
+          <p class="project-card-sm__desc">Device insurance platform. Hid a save button, reduced backend traffic by 90%.</p>
+          <p class="project-card-sm__impact">90% backend traffic reduction</p>
+        </a>
+        <a href="projects/facy.html" class="project-card-sm">
+          <div class="project-card-sm__image" role="img" aria-label="FACY project"><img src="img/work-facy.webp" alt="FACY.jp" loading="lazy"></div>
+          <p class="project-card-sm__year">2018</p>
+          <h4 class="project-card-sm__name">FACY.jp</h4>
+          <p class="project-card-sm__desc">Fashion e-commerce redesign in 4 months as a side project.</p>
+          <p class="project-card-sm__impact">Revenue doubled</p>
+        </a>
+        <a href="projects/wantedly.html" class="project-card-sm">
+          <div class="project-card-sm__image" role="img" aria-label="Wantedly project"><img src="img/work-wantedly.webp" alt="Wantedly" loading="lazy"></div>
+          <p class="project-card-sm__year">2017 – 2018</p>
+          <h4 class="project-card-sm__name">Wantedly</h4>
+          <p class="project-card-sm__desc">First job in Japan. Three products, every skill forged under pressure.</p>
+          <p class="project-card-sm__impact">WAU +230%, CPI −84%</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Archive -->
+  <section class="section fade-in">
+    <div class="container container--wide">
+      <h2 class="projects__title">Pieces</h2>
+      <div class="archive-grid">
+        <!-- Row 1 -->
+        <div class="archive-card">
+          <div class="archive-card__image" role="img" aria-label="Motion Graphics"><img src="img/piece-motion.webp" alt="Motion Graphics" loading="lazy"></div>
+          <h4 class="archive-card__name">Motion Graphics</h4>
+          <p class="archive-card__type">Wantedly People · Infographic &amp; advertising</p>
+        </div>
+        <div class="archive-card">
+          <div class="archive-card__image" role="img" aria-label="glo campaigns"><img src="img/piece-glo.webp" alt="glo campaigns" loading="lazy"></div>
+          <h4 class="archive-card__name">glo campaigns</h4>
+          <p class="archive-card__type">Banners · eDM · LINE · Posters</p>
+        </div>
+        <div class="archive-card">
+          <div class="archive-card__image" role="img" aria-label="KODE campaigns"><img src="img/piece-kode.webp" alt="KODE campaigns" loading="lazy"></div>
+          <h4 class="archive-card__name">KODE campaigns</h4>
+          <p class="archive-card__type">Graphic design · Ogilvy</p>
+        </div>
+        <div class="archive-card">
+          <div class="archive-card__image" role="img" aria-label="Sabaijai Thai Job"><img src="img/piece-mou.webp" alt="Sabaijai Thai Job" loading="lazy"></div>
+          <h4 class="archive-card__name">Sabaijai Thai Job</h4>
+          <p class="archive-card__type">Mobile app · Thai Ministry of Labour</p>
+        </div>
+        <div class="archive-card">
+          <div class="archive-card__image" role="img" aria-label="Wordcap"><img src="img/piece-wordcap.webp" alt="Wordcap" loading="lazy"></div>
+          <h4 class="archive-card__name">Wordcap</h4>
+          <p class="archive-card__type">Language learning · Master's thesis</p>
+        </div>
+        <!-- Row 2 -->
+        <div class="archive-card">
+          <div class="archive-card__image" role="img" aria-label="The Girl & The Pig"><img src="img/piece-gp.webp" alt="The Girl & The Pig" loading="lazy"></div>
+          <h4 class="archive-card__name">The Girl &amp; The Pig</h4>
+          <p class="archive-card__type">Branding · Illustration · Restaurant</p>
+        </div>
+        <div class="archive-card">
+          <div class="archive-card__image" role="img" aria-label="Nature Edition"><img src="img/piece-ne.webp" alt="Nature Edition" loading="lazy"></div>
+          <h4 class="archive-card__name">Nature Edition</h4>
+          <p class="archive-card__type">Branding · Packaging · Skincare</p>
+        </div>
+        <div class="archive-card">
+          <div class="archive-card__image" role="img" aria-label="loll"><img src="img/piece-lol.webp" alt="loll" loading="lazy"></div>
+          <h4 class="archive-card__name">loll — Low Calories Snack</h4>
+          <p class="archive-card__type">Visual identity · Illustration · Packaging</p>
+        </div>
+        <div class="archive-card">
+          <div class="archive-card__image" role="img" aria-label="GranMonte"><img src="img/piece-granmonte.webp" alt="GranMonte" loading="lazy"></div>
+          <h4 class="archive-card__name">GranMonte</h4>
+          <p class="archive-card__type">Visual design · Wine label</p>
+        </div>
+        <div class="archive-card">
+          <div class="archive-card__image" role="img" aria-label="Traffic Light Controller"><img src="img/piece-student.webp" alt="Traffic Light Controller" loading="lazy"></div>
+          <h4 class="archive-card__name">Traffic Light Controller</h4>
+          <p class="archive-card__type">Mobile app · Concept design</p>
+        </div>
+        <!-- Row 3 -->
+        <div class="archive-card">
+          <div class="archive-card__image" role="img" aria-label="Cooker"><img src="img/piece-cooker.webp" alt="Cooker" loading="lazy"></div>
+          <h4 class="archive-card__name">KumKhao</h4>
+          <p class="archive-card__type">Student project · Home party rice cracker cooker</p>
+        </div>
+        <div class="archive-card">
+          <div class="archive-card__image" role="img" aria-label="Speaker"><img src="img/piece-speaker.webp" alt="Speaker" loading="lazy"></div>
+          <h4 class="archive-card__name">Resonance</h4>
+          <p class="archive-card__type">Student project · Sculpture-like speaker</p>
+        </div>
+        <div class="archive-card">
+          <div class="archive-card__image" role="img" aria-label="Basket"><img src="img/piece-basket.webp" alt="Basket" loading="lazy"></div>
+          <h4 class="archive-card__name">Weave</h4>
+          <p class="archive-card__type">Student project · No-joint fruit basket</p>
+        </div>
+        <div class="archive-card">
+          <div class="archive-card__image" role="img" aria-label="Earring"><img src="img/piece-earring.webp" alt="Earring" loading="lazy"></div>
+          <h4 class="archive-card__name">Recast</h4>
+          <p class="archive-card__type">Student project · Accessories from wasted materials</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Prologue -->
+  <section class="section fade-in" id="prologue">
+    <div class="container container--wide">
+      <h2 class="projects__title">Prologue</h2>
+      <div class="prologue-grid">
+        <div class="archive-card">
+          <div class="archive-card__image" role="img" aria-label="Phanin"><img src="img/prologue-kmutt.webp" alt="Phanin — KMUTT graduate work" loading="lazy"></div>
+          <h4 class="archive-card__name">PHANIN</h4>
+          <p class="archive-card__type">KMUTT · Bachelor's</p>
+          <p class="archive-card__desc">A research-driven design project that excavates the lost meanings behind Thai Lao-Vieng tribal textile motifs — translating belief systems into tactile, story-embedded products. Moving beyond aesthetics into cultural memory, the work proves that the most powerful design medium isn't the object, but the scenario it creates.</p>
+        </div>
+        <div class="archive-card">
+          <div class="archive-card__image" role="img" aria-label="Graduate work 1"><img src="img/prologue-tama.webp" alt="Tama Art University graduate work" loading="lazy"></div>
+          <h4 class="archive-card__name">MOYOGATARI</h4>
+          <p class="archive-card__type">Tama Art University · Master's</p>
+          <p class="archive-card__desc">A continued research-driven project exploring how ancient Northern Thai tribal textile motifs can be made meaningful, not just decorative, in modern life. Culminating in MOYOGATARI, a gift tableware brand where motif meaning becomes a vehicle for human connection, the work proves that cultural heritage survives not through preservation, but through context.</p>
+        </div>
+      </div>
+      <div class="timeline timeline--no-dash" style="margin-top: 5rem;">
+        <div class="timeline__track">
+          <div class="timeline__item">
+            <span class="timeline__dot"></span>
+            <p class="timeline__year">2013</p>
+            <p class="timeline__role">B.Arch<br>Industrial Design</p>
+            <p class="timeline__company">KMUTT, Bangkok</p>
+          </div>
+          <div class="timeline__item">
+            <span class="timeline__dot"></span>
+            <p class="timeline__year">2015</p>
+            <p class="timeline__role">TA<br>Technical Drawing</p>
+            <p class="timeline__company">Tama Art University</p>
+          </div>
+          <div class="timeline__item">
+            <span class="timeline__dot"></span>
+            <p class="timeline__year">2015</p>
+            <p class="timeline__role">TA<br>Visual Thinking</p>
+            <p class="timeline__company">Tama Art University</p>
+          </div>
+          <div class="timeline__item">
+            <span class="timeline__dot"></span>
+            <p class="timeline__year">2015</p>
+            <p class="timeline__role">TA<br>Graphic Design</p>
+            <p class="timeline__company">KMUTT, Bangkok</p>
+          </div>
+          <div class="timeline__item">
+            <span class="timeline__dot"></span>
+            <p class="timeline__year">2016</p>
+            <p class="timeline__role">Lecturer<br>Textile Design</p>
+            <p class="timeline__company">KMUTT, Bangkok</p>
+          </div>
+          <div class="timeline__item">
+            <span class="timeline__dot"></span>
+            <p class="timeline__year">2016</p>
+            <p class="timeline__role">Guest Lecturer<br>Design</p>
+            <p class="timeline__company">Tama Art University</p>
+          </div>
+          <div class="timeline__item">
+            <span class="timeline__dot"></span>
+            <p class="timeline__year">2016</p>
+            <p class="timeline__role">Guest Lecturer<br>Master's Project</p>
+            <p class="timeline__company">Tama Art University</p>
+          </div>
+          <div class="timeline__item">
+            <span class="timeline__dot"></span>
+            <p class="timeline__year">2017</p>
+            <p class="timeline__role">M.A.<br>Product Design</p>
+            <p class="timeline__company">Tama Art University</p>
+          </div>
+          <div class="timeline__item">
+            <span class="timeline__dot"></span>
+            <p class="timeline__year">2022</p>
+            <p class="timeline__role">Guest Lecturer<br>UI/UX Design</p>
+            <p class="timeline__company">Tama Art University</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- Contact modal -->
+<div class="contact-modal" id="contactModal">
+  <div class="contact-modal__overlay"></div>
+  <div class="contact-modal__card">
+    <button class="contact-modal__close" aria-label="Close">&times;</button>
+    <h2 class="contact-modal__title">Get in touch</h2>
+    <p class="contact-modal__subtitle">Pick a topic, add a note, and your email client will do the rest.</p>
+    <form id="contactForm">
+      <p class="contact-modal__label">Topic</p>
+      <div class="contact-modal__topics">
+        <label class="contact-modal__topic"><input type="radio" name="topic" value="Job Opportunity" checked><span>Job Opportunity</span></label>
+        <label class="contact-modal__topic"><input type="radio" name="topic" value="Project Inquiry"><span>Project Inquiry</span></label>
+        <label class="contact-modal__topic"><input type="radio" name="topic" value="Partnership"><span>Partnership</span></label>
+        <label class="contact-modal__topic"><input type="radio" name="topic" value="Just Say Hi"><span>Just Say Hi</span></label>
+      </div>
+      <p class="contact-modal__label">Name <span style="font-weight:300;color:var(--text-tertiary)">(optional)</span></p>
+      <input type="text" class="contact-modal__input" id="contactName" placeholder="Your name">
+      <p class="contact-modal__label">Message</p>
+      <textarea class="contact-modal__textarea" id="contactMessage" placeholder="What's on your mind?" rows="5"></textarea>
+      <button type="submit" class="contact-modal__send">Send</button>
+    </form>
+  </div>
+</div>
+
+<!-- Image modal -->
+<div class="modal" id="imageModal" role="dialog" aria-label="Image preview">
+  <button class="modal__close" aria-label="Close">&times;</button>
+  <img class="modal__img" src="" alt="">
+  <p class="modal__caption"></p>
+</div>
+
+<footer class="site-footer" id="contact">
+  <div class="container container--wide">
+    <div class="site-footer__top">
+      <h2 class="site-footer__heading">Thank you</h2>
+      <div class="site-footer__links">
+        <div class="site-footer__col">
+          <p class="site-footer__label">Recent Work</p>
+          <p class="site-footer__value">Available upon request</p>
+        </div>
+        <div class="site-footer__col">
+          <p class="site-footer__label">LinkedIn</p>
+          <p class="site-footer__value"><a href="https://www.linkedin.com/in/amon-t/" target="_blank" rel="noopener">linkedin.com/in/amon-t</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <p class="site-footer__updated">Updated March 2026</p>
+      <p class="site-footer__copyright">&copy; Amon T. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Show footer only when scrolled near bottom
+(function() {
+  var footer = document.querySelector('.site-footer');
+  if (!footer) return;
+  window.addEventListener('scroll', function() {
+    var scrollBottom = window.scrollY + window.innerHeight;
+    var docHeight = document.documentElement.scrollHeight;
+    if (scrollBottom > docHeight - 400) {
+      footer.classList.add('is-visible');
+    } else {
+      footer.classList.remove('is-visible');
+    }
+  }, { passive: true });
+})();
+
+// Smooth scroll for nav links
+(function() {
+  document.querySelectorAll('.site-header__nav a[href^="#"]').forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      var id = link.getAttribute('href');
+      if (id === '#' || id === '#contact') return;
+      var target = document.querySelector(id);
+      if (!target) return;
+      e.preventDefault();
+      var start = window.scrollY;
+      var end = target.getBoundingClientRect().top + start - 100;
+      var distance = end - start;
+      var duration = 1200;
+      var startTime = null;
+      function ease(t) {
+        return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+      }
+      function step(time) {
+        if (!startTime) startTime = time;
+        var progress = Math.min((time - startTime) / duration, 1);
+        window.scrollTo(0, start + distance * ease(progress));
+        if (progress < 1) requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+      history.replaceState(null, '', id);
+    });
+  });
+})();
+
+// Contact modal
+(function() {
+  var modal = document.getElementById('contactModal');
+  var overlay = modal.querySelector('.contact-modal__overlay');
+  var closeBtn = modal.querySelector('.contact-modal__close');
+  var form = document.getElementById('contactForm');
+
+  // Open modal from Contact nav button
+  document.querySelectorAll('.nav-contact, a[href="#contact"]').forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      modal.classList.add('is-open');
+      document.body.style.overflow = 'hidden';
+    });
+  });
+
+  function closeModal() {
+    modal.classList.remove('is-open');
+    document.body.style.overflow = '';
+  }
+
+  closeBtn.addEventListener('click', closeModal);
+  overlay.addEventListener('click', closeModal);
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && modal.classList.contains('is-open')) closeModal();
+  });
+
+  // Form submit — opens email client
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    var topic = form.querySelector('input[name="topic"]:checked').value;
+    var name = document.getElementById('contactName').value;
+    var message = document.getElementById('contactMessage').value;
+    var subject = encodeURIComponent(topic + (name ? ' — ' + name : ''));
+    var body = encodeURIComponent(message);
+    window.location.href = 'mailto:amonrada.tardthong@gmail.com?subject=' + subject + '&body=' + body;
+    closeModal();
+  });
+})();
+
+// Page transitions
+(function() {
+  document.querySelectorAll('a[href^="projects/"]').forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      var url = link.getAttribute('href');
+      document.body.classList.add('page-exit');
+      setTimeout(function() { window.location.href = url; }, 400);
+    });
+  });
+})();
+
+// Scroll fade-in observer
+(function() {
+  var els = document.querySelectorAll('.fade-in');
+  if (!els.length) return;
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  els.forEach(function(el) { observer.observe(el); });
+})();
+
+// Image modal for Pieces section
+(function() {
+  var modal = document.getElementById('imageModal');
+  var modalImg = modal.querySelector('.modal__img');
+  var modalCaption = modal.querySelector('.modal__caption');
+  var modalClose = modal.querySelector('.modal__close');
+
+  document.querySelectorAll('.archive-grid .archive-card').forEach(function(card) {
+    card.addEventListener('click', function() {
+      var img = card.querySelector('img');
+      if (!img) return;
+      var name = card.querySelector('.archive-card__name');
+      modalImg.src = img.src;
+      modalImg.alt = img.alt;
+      modalCaption.textContent = name ? name.textContent : '';
+      modal.classList.add('is-open');
+      document.body.style.overflow = 'hidden';
+    });
+  });
+
+  function closeModal() {
+    modal.classList.remove('is-open');
+    document.body.style.overflow = '';
+  }
+
+  modalClose.addEventListener('click', closeModal);
+  modal.addEventListener('click', function(e) {
+    if (e.target === modal) closeModal();
+  });
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeModal();
+  });
+})();
+
+// Show/hide header on scroll direction (signary-style)
+(function() {
+  var header = document.querySelector('.site-header');
+  if (!header) return;
+  var lastY = 0;
+  window.addEventListener('scroll', function() {
+    var y = window.scrollY;
+    if (y < 64) {
+      header.classList.remove('site-header--hidden');
+    } else if (y > lastY) {
+      header.classList.add('site-header--hidden');
+    } else {
+      header.classList.remove('site-header--hidden');
+    }
+    lastY = y;
+  }, { passive: true });
+})();
+
+// Hero fade + drift up on scroll + hide scroll indicator
+(function() {
+  var heroContent = document.querySelector('.hero__content');
+  var scrollInd = document.querySelector('.hero__scroll');
+  var pov = document.querySelector('.pov');
+  if (!heroContent) return;
+  function onScroll() {
+    var scrollY = window.scrollY;
+    var windowH = window.innerHeight;
+    // Fade hero based on POV reaching center of viewport
+    var heroH = heroContent.offsetHeight;
+    var fadeEnd = heroH * 0.6;
+    var fadeStart = 0;
+    var progress = Math.min(Math.max((scrollY - fadeStart) / (fadeEnd - fadeStart), 0), 1);
+    var eased = progress * progress;
+    var opacity = 1 - eased;
+    var translateY = eased * -40;
+    heroContent.style.opacity = opacity;
+    heroContent.style.transform = 'translateY(' + translateY + 'px)';
+    if (scrollInd) scrollInd.style.opacity = scrollY > 10 ? 0 : 1;
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+})();
+
+// Scroll-driven gradient reveal for POV text — continuous across both paragraphs
+(function() {
+  var povSection = document.querySelector('.pov');
+  var povTexts = document.querySelectorAll('.pov__text');
+  if (!povSection || !povTexts.length) return;
+  function onScroll() {
+    var windowH = window.innerHeight;
+    var sectionRect = povSection.getBoundingClientRect();
+    var sectionTop = sectionRect.top;
+    var totalHeight = sectionRect.height;
+    // Overall progress: 0 when section enters viewport, 1 when fully scrolled past center
+    var start = windowH;
+    var end = windowH * 0.1;
+    var globalProgress = (start - sectionTop) / (start - end);
+    globalProgress = Math.min(Math.max(globalProgress, 0), 1);
+    // Calculate where each paragraph sits within the section
+    // Calculate as one continuous block from first element top
+    var firstRect = povTexts[0].getBoundingClientRect();
+    var lastRect = povTexts[povTexts.length - 1].getBoundingClientRect();
+    var totalTop = firstRect.top;
+    var totalHeight = lastRect.bottom - firstRect.top;
+
+    // Start when first line reaches middle of viewport
+    var startTrigger = windowH * 0.5;
+    var globalProgress = (startTrigger - totalTop) / (totalHeight + startTrigger * 0.3);
+    globalProgress = Math.min(Math.max(globalProgress, 0), 1);
+    var revealPixel = globalProgress * totalHeight;
+
+    povTexts.forEach(function(el) {
+      var elRect = el.getBoundingClientRect();
+      var elTop = elRect.top - firstRect.top;
+      if (revealPixel <= elTop) {
+        // Not reached this element yet — fully faded
+        el.style.setProperty('--pov-reveal', '-15%');
+      } else {
+        var elProgress = (revealPixel - elTop) / elRect.height;
+        elProgress = Math.min(Math.max(elProgress, 0), 1);
+        var reveal = elProgress * 100;
+        el.style.setProperty('--pov-reveal', reveal + '%');
+      }
+    });
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+})();
+
+function toggleTheme() {
+  const root = document.documentElement;
+  const current = root.getAttribute('data-theme');
+  const isDark = current === 'dark' || (!current && window.matchMedia('(prefers-color-scheme: dark)').matches);
+  const next = isDark ? 'light' : 'dark';
+  root.setAttribute('data-theme', next);
+  localStorage.setItem('theme', next);
+}
+(function() {
+  const saved = localStorage.getItem('theme');
+  if (saved) document.documentElement.setAttribute('data-theme', saved);
+})();
+</script>
+</body>
+</html>
