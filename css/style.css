@@ -1481,9 +1481,21 @@ body.home main {
   transform: translateY(-3.25px) rotate(-45deg);
 }
 
+.nav-menu__contact {
+  display: none;
+}
+
 @media (max-width: 767px) {
   .nav-burger {
     display: flex;
+  }
+
+  .nav-contact {
+    display: none;
+  }
+
+  .nav-menu__contact {
+    display: block;
   }
 
   .nav-menu {
