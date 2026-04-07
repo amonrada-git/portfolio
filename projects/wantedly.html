@@ -81,15 +81,31 @@
       <div class="content-section__body">
         <h3>Wantedly People — Timeline Feature</h3>
         <p>A new social timeline for the business card scanning app, designed to increase organic users through daily conversations and generate advertising revenue through sponsored content. I designed the full feature: timeline feed, profile timeline, article and video formats, post creation, and advertising motion graphics.</p>
+        <figure class="project-figure">
+          <img src="../img/work-wantedly-people.webp" alt="Wantedly People timeline feature design" loading="lazy">
+        </figure>
         <p>My contributions across Wantedly's products helped raise weekly active users by roughly 230% and reduced cost per install by roughly 84% through the digital promotional materials I created.</p>
         <p>The motion graphics were entirely new to me. I'd never done animation before this project. I was assigned the work, given a deadline, and figured it out — learning the craft while delivering production-quality output. That skillset has stayed with me ever since.</p>
         <p>Beyond product design, I also handled photography — company events, product advertising, and team member profile pictures. Whatever needed doing.</p>
 
         <h3>Wantedly Visit — Appointment Booking</h3>
         <p>Designed the date and time booking feature for both sides: job seekers selecting visit slots, and companies managing their availability. The design went through three iterations, each refined through user testing — from a basic checked UI, to a cleaner time-range display, to a multi-select system that benefited both parties. The final version let users propose multiple time slots, giving companies flexibility to choose what worked.</p>
+        <div class="image-grid-2">
+          <figure class="project-figure">
+            <img src="../img/work-wantedly-visit-user.webp" alt="Wantedly Visit appointment booking — user side" loading="lazy">
+          </figure>
+          <figure class="project-figure">
+            <img src="../img/work-wantedly-visit-client.webp" alt="Wantedly Visit appointment booking — client side" loading="lazy">
+          </figure>
+        </div>
 
         <h3>Wantedly Summer Internship 2018 — Landing Page</h3>
         <p><strong>Delivered in 4 days. Two complete design directions with interactive prototypes.</strong></p>
+        <figure class="project-figure">
+          <video autoplay playsinline muted loop preload="none" loading="lazy" style="width:100%">
+            <source src="../img/work-wantedly-internship-prototype.mp4" type="video/mp4">
+          </video>
+        </figure>
         <p>Designed a full promotional landing page for Wantedly's summer internship program. This wasn't just a page — it was a conversion system with nine deliberate touchpoints, each mapped to an emotional journey across three user scenarios:</p>
         <ul>
           <li>Users who already know what to apply for (direct path)</li>
@@ -98,6 +114,22 @@
         </ul>
         <p>Micro-decisions throughout: "Want to Apply" instead of "Apply" to soften the commitment language. A "Keep in Touch" option for users who didn't find a matching position — capturing leads the previous design lost entirely. Commute distance calculation to reduce a practical concern before it became a barrier. Account creation placed at the emotional peak — right after application confirmation — when motivation is highest.</p>
         <p>All internship positions were filled.</p>
+        <div class="image-carousel">
+          <div class="image-carousel__track">
+            <img src="../img/work-wantedly-internship-01.webp" alt="Wantedly internship landing page design 1" loading="lazy">
+            <img src="../img/work-wantedly-internship-02.webp" alt="Wantedly internship landing page design 2" loading="lazy">
+            <img src="../img/work-wantedly-internship-03.webp" alt="Wantedly internship landing page design 3" loading="lazy">
+            <img src="../img/work-wantedly-internship-04.webp" alt="Wantedly internship landing page design 4" loading="lazy">
+            <img src="../img/work-wantedly-internship-05.webp" alt="Wantedly internship landing page design 5" loading="lazy">
+          </div>
+          <div class="image-carousel__dots">
+            <button class="image-carousel__dot active" aria-label="Show image 1"></button>
+            <button class="image-carousel__dot" aria-label="Show image 2"></button>
+            <button class="image-carousel__dot" aria-label="Show image 3"></button>
+            <button class="image-carousel__dot" aria-label="Show image 4"></button>
+            <button class="image-carousel__dot" aria-label="Show image 5"></button>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -196,6 +228,45 @@ function toggleTheme() {
     }
     lastY = y;
   }, { passive: true });
+})();
+
+// Image carousel
+(function() {
+  var carousel = document.querySelector('.image-carousel');
+  if (!carousel) return;
+  var track = carousel.querySelector('.image-carousel__track');
+  var dots = carousel.querySelectorAll('.image-carousel__dot');
+  var count = dots.length;
+  var current = 0;
+  var interval;
+
+  function goTo(index) {
+    current = index;
+    track.style.transform = 'translateX(-' + (current * 100) + '%)';
+    dots.forEach(function(d, i) {
+      d.classList.toggle('active', i === current);
+    });
+  }
+
+  dots.forEach(function(dot, i) {
+    dot.addEventListener('click', function() {
+      goTo(i);
+      resetAutoplay();
+    });
+  });
+
+  function autoplay() {
+    interval = setInterval(function() {
+      goTo((current + 1) % count);
+    }, 4500);
+  }
+
+  function resetAutoplay() {
+    clearInterval(interval);
+    autoplay();
+  }
+
+  autoplay();
 })();
 
 // Page transition for back link
